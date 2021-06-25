@@ -1,7 +1,7 @@
 window.CAPTCHAp = {
   private:{
     choice:function(arr){
-      return arr[Math.round(Math.random()*arr.length)]
+      return (arr[Math.round(Math.random()*arr.length)]||arr[0 + Math.round(Math.random())])
     },
     ch:new Map([["What is tree without the ee?","tr"],["What is bee without the b?","ee"]]),
     
