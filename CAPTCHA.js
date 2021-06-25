@@ -14,7 +14,7 @@ var verify = async function(clocation={top:0,left:0}){
     CAPTCHAbox.style.background = 'gray'
     CAPTCHAbox.style.left = clocation.left + "px"
     CAPTCHAbox.style.top = clocation.top + "px"
-    const message = window.CAPTCHAp.choice(keys)
+    const message = window.CAPTCHAp.private.choice(keys)
     console.log(message)
   })
 }
